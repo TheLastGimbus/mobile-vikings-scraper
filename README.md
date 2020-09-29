@@ -11,12 +11,12 @@ import mobilevikings_scraper
 stuff = mobilevikings_scraper.scrape('your_login_email', 'password')
 
 # You can play around with what you will find in this dict:
-internet = stuff['services'][0]['pointer_description']
-print(f'You have {internet} of internet left')
+gb = float(stuff['services'][0]['pointer_description'][:-2])
+print(f'You have {gb} GB of internet left')
 
-if float(internet[:-2]) > 100:
+if gb > 100:
     print('Niiiiice')
-elif float(internet[:-2]) < 1:
+elif gb < 1:
     print('WHAAAT!!!')
 ```
 
