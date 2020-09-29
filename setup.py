@@ -1,9 +1,10 @@
 import pathlib
+
 import setuptools
 
 HERE = pathlib.Path(__file__).parent
 
-README = (HERE/"README.md").read_text()
+README = (HERE / "README.md").read_text()
 
 setuptools.setup(
     name="mobile-vikings-scraper",
@@ -24,5 +25,5 @@ setuptools.setup(
         'Intended Audience :: Telecommunications Industry',
         'Topic :: Internet :: WWW/HTTP'
     ],
-    install_requires=(HERE/'requirements.txt').read_text().split('\n'),
+    install_requires=(HERE / 'requirements.txt').read_text().split('\n'),
 )
