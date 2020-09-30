@@ -8,7 +8,7 @@ README = (HERE / "README.md").read_text()
 
 setuptools.setup(
     name="mobile-vikings-scraper",
-    version="1.0.0",
+    version="1.0.1",
     description="Scraper for Mobile Vikings in Poland",
     long_description=README,
     long_description_content_type='text/markdown',
@@ -19,7 +19,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+        'License :: OSI Approved :: Apache Software License',
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Intended Audience :: Telecommunications Industry',
