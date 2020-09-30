@@ -8,14 +8,14 @@ README = (HERE / "README.md").read_text()
 
 setuptools.setup(
     name="mobile-vikings-scraper",
-    version="1.0.1",
+    version="1.0.2",
     description="Scraper for Mobile Vikings in Poland",
     long_description=README,
     long_description_content_type='text/markdown',
     url='https://github.com/TheLastGimbus/mobile-vikings-scraper',
     author='TheLastGimbus',
     author_email='mateusz.soszynski@tuta.io',
-    license='GPL-3.0',
+    license='Apache',
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
